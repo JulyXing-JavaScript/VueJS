@@ -1,0 +1,12 @@
+*.*
+
+!bin/
+!include/
+!node_modules/
+!share/
+!var/
+
+!.gitignore
+!README.md
+!gulpfile.js
+!package.json
