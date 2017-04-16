@@ -1,0 +1,7 @@
+*.*
+
+!css/
+!img/
+!templates/
+
+!.gitignore

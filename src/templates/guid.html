@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>VueJS 入门学习</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+</head>
+
+<body>
+    <div id='app1'>
+        <p>{{ message }}</p>
+    </div>
+    <div id='app2'>
+        <span v-bind:title="message">
+            鼠标悬停几秒钟查看此处动态绑定的信息!
+        </span>
+    </div>
+    <div id='app3'>
+        <p v-if="seen">可见</p>
+    </div>
+    <div id='app4'>
+        <ol>
+            <li v-for="todo in todos">{{ todo.text }}</li>
+        </ol>
+    </div>
+    <div id='app5'>
+        <p>{{ message }}</p>
+        <button type="button" v-on:click="reserseMessage">逆转消息</button>
+        <p>{{ info }}</p>
+        <button type="button" v-on:click="test">测试</button>
+    </div>
+    <div id='app6'>
+        <p>{{ message }}</p>
+        <input type="text" name="message" v-model="message" v-bind:placeholder="info">
+    </div>
+    <div id='app7'>
+        <test></test>
+        <ol>
+            <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+        </ol>
+    </div>
+    <script src="../../include/vue.js"></script>
+    <script src="../../lib/guid.js"></script>
+</body>
+
+</html>
