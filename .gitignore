@@ -2,8 +2,10 @@
 
 !bin/
 !include/
+!lib/
 !node_modules/
 !share/
+!src/
 !var/
 
 !.gitignore
